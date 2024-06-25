@@ -18,7 +18,7 @@ const DepartmentList = () => {
 
     const fetchDepartments = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/departments');
+            const response = await axios.get('https://392f-191-98-159-22.ngrok-free.app/api/departments');
             setDepartments(response.data);
             setFilteredDepartments(response.data); // Set filteredDepartments initially
         } catch (error) {
